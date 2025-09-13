@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Product Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .product-container {
+      border: 1px solid #000;
+      padding: 15px;
+      margin-bottom: 25px;
+      max-width: 500px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    select {
+      margin: 10px 0;
+      padding: 5px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <h3>Product List</h3>
+    <label for="filter">Filter by Category: </label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="clothing">Clothing</option>
+      <option value="electronics">Electronics</option>
+      <option value="books">Books</option>
+    </select>
+    <div id="productList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
